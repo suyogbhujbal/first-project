@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.secret_key = "Secret Key"
 #lg.basicConfig(filename='Employee_data.log', level=lg.INFO,  format='%(asctime)s %(message)s', filemode='w')
 #SqlAlchemy Database Configuration With Mysql
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:jazz@localhost/EmpData1'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgreql://root:pass@localhost/management'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
